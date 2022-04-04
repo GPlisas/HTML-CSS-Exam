@@ -1,0 +1,492 @@
+html {
+  background-color: #eeeeee;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0.01rem;
+}
+
+body {
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+body .container {
+  padding-left: 1.5rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+nav .burger img {
+  width: 20px;
+  height: 20px;
+}
+
+nav a {
+  padding-left: 2rem;
+  color: #777777;
+  text-decoration: none;
+  font-size: larger;
+}
+
+nav .nav-link :last-child {
+  color: #ff3998;
+}
+
+.hero {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero .graphic img {
+  overflow: hidden;
+  margin-left: 200px;
+  width: 400px;
+}
+
+.hero .text {
+  position: absolute;
+  z-index: 0;
+  width: 70%;
+}
+
+.hero .text h1 {
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.2;
+  font-size: 2.5rem;
+}
+
+.text p span {
+  text-decoration: underline;
+}
+
+.text p {
+  text-align: left;
+  font-weight: lighter;
+  color: #777777;
+  font-size: 1.5rem;
+}
+
+.text .launch {
+  font-size: 1.1rem;
+  color: #ff3998;
+  font-weight: bold;
+  letter-spacing: 0.21rem;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  width: 188px;
+  height: 65px;
+  background-image: radial-gradient(circle at 100% 100%, transparent 29px, #ff3998 29px, #ff3998 32px, transparent 32px), -webkit-gradient(linear, left top, right top, from(#ff3998), to(#d3ec18)), radial-gradient(circle at 0% 100%, transparent 29px, #d3ec18 29px, #d3ec18 32px, transparent 32px), -webkit-gradient(linear, left top, left bottom, from(#d3ec18), to(#ff8139)), radial-gradient(circle at 0% 0%, transparent 29px, #ff8139 29px, #ff8139 32px, transparent 32px), -webkit-gradient(linear, right top, left top, from(#ff8139), to(#ff3939)), radial-gradient(circle at 100% 0%, transparent 29px, #ff3939 29px, #ff3939 32px, transparent 32px), -webkit-gradient(linear, left bottom, left top, from(#ff3939), to(#ff3998));
+  background-image: radial-gradient(circle at 100% 100%, transparent 29px, #ff3998 29px, #ff3998 32px, transparent 32px), linear-gradient(to right, #ff3998, #d3ec18), radial-gradient(circle at 0% 100%, transparent 29px, #d3ec18 29px, #d3ec18 32px, transparent 32px), linear-gradient(to bottom, #d3ec18, #ff8139), radial-gradient(circle at 0% 0%, transparent 29px, #ff8139 29px, #ff8139 32px, transparent 32px), linear-gradient(to left, #ff8139, #ff3939), radial-gradient(circle at 100% 0%, transparent 29px, #ff3939 29px, #ff3939 32px, transparent 32px), linear-gradient(to top, #ff3939, #ff3998);
+  background-size: 32px 32px, calc(100% - 64px) 3px, 32px 32px, 3px calc(100% - 64px);
+  background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+}
+
+.sellpoint-container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: url(./assets/background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+}
+
+.sellpoint-container h3 {
+  padding-top: 1.5rem;
+}
+
+.sellpoint-container p {
+  color: #111111;
+  padding-bottom: 1.5rem;
+}
+
+.companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.companies :nth-child(4) {
+  display: none;
+}
+
+.companies img {
+  width: 130px;
+  padding-right: 1.5rem;
+}
+
+.products {
+  padding-bottom: 2rem;
+}
+
+.products,
+.footer-upsell {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.cards :not(.not):hover {
+  -webkit-box-shadow: 2px 2px 9px 0px #ff8139;
+          box-shadow: 2px 2px 9px 0px #ff8139;
+}
+
+.cards .cardbox {
+  width: 290px;
+  border-radius: 16px;
+  background-color: #eeeeee;
+  margin-right: 1.5rem;
+}
+
+.cards .cardbox :not(.not):hover {
+  padding: 0.1rem;
+}
+
+.cards .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem;
+}
+
+.cards .series {
+  text-align: left;
+}
+
+.cards .series tr:first-child {
+  color: #ff8139;
+}
+
+.cards .bid {
+  text-align: right;
+}
+
+.cards .bid tr:first-child {
+  color: #777777;
+}
+
+.cards .bid table tr:first-child,
+.cards .series table tr:first-child {
+  font-size: small;
+}
+
+.cards .bid table :nth-child(2),
+.cards .series table :nth-child(2) {
+  font-size: larger;
+}
+
+.cards .bid table :nth-child(3),
+.cards .series table :nth-child(3) {
+  color: #777777;
+}
+
+.footer-upsell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+.footer-upsell img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  overflow: hidden;
+  padding-left: 2rem;
+  width: 200px;
+}
+
+.footer-upsell .text {
+  z-index: 0;
+  width: 50%;
+}
+
+.footer-upsell .text h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: bolder;
+  margin-top: 1rem;
+}
+
+.footer-top {
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
+.footer-top .infoblock {
+  padding: 1rem;
+}
+
+.footer-top .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-top .list .list-items {
+  padding: 1rem;
+}
+
+.footer-top .list li {
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+
+.footer-top .list a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.footer-top .list .br {
+  padding-bottom: 1.5rem;
+  color: #555555;
+}
+
+.footer-bottom {
+  color: #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (min-width: 230px) {
+  .sellpoint-container {
+    height: 370px;
+    margin-top: 12rem;
+  }
+  .nav-link {
+    display: none;
+  }
+  .footer-upsell img {
+    padding-top: 5rem;
+  }
+  .footer-bottom {
+    display: contents;
+    text-align: center;
+  }
+  .footer-bottom :last-child {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 230px) and (min-width: 429px) {
+  .hero .graphic img {
+    -webkit-transition: ease 1s;
+    transition: ease 1s;
+    overflow: hidden;
+    margin-left: 0;
+    width: 400px;
+  }
+  .hero .text {
+    position: static;
+    z-index: 0;
+    width: 80%;
+  }
+  .hero .text h1 {
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
+  }
+  .sellpoint-container {
+    margin-top: 0rem;
+  }
+  .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .companies :nth-child(4) {
+    display: inherit;
+  }
+  .companies img {
+    width: 130px;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 230px) and (min-width: 650px) {
+  .nav-link {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+  .footer-upsell {
+    overflow: none;
+  }
+  .footer-upsell img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    overflow: none;
+    padding-left: 0rem;
+    padding-right: 10rem;
+  }
+  .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-bottom :last-child {
+    display: contents;
+  }
+}
+
+@media only screen and (min-width: 230px) and (min-width: 992px) {
+  body .container {
+    padding-left: 5rem;
+  }
+  nav,
+  .companies,
+  footer {
+    padding-right: 5rem;
+  }
+  .hero {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+  }
+  .hero .text {
+    z-index: 0;
+    width: 100%;
+  }
+  .hero .text h1 {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 6rem;
+  }
+  .hero .graphic img {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    overflow: hidden;
+    width: 700px;
+  }
+  .sellpoint-container {
+    padding: 5rem;
+  }
+  .sellpoint-container .text {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    padding-left: 5rem;
+  }
+}
+
+@media only screen and (min-width: 230px) and (min-width: 1441px) {
+  .sellpoint-container {
+    background-size: contain;
+    padding: 5rem;
+  }
+  .sellpoint-container .text {
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+    padding-left: 5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
