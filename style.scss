@@ -79,12 +79,6 @@ nav {
     font-size: 2.5rem;
 
     p {
-        span {
-            text-decoration: underline;
-        }
-    }
-
-    p {
         text-align: left;
         font-weight: lighter;
         color: $Dark3;
@@ -152,6 +146,15 @@ nav {
 
 .products {
     padding-bottom: 2rem;
+
+    .text {
+        p {
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+
 }
 
 .products,
@@ -243,12 +246,20 @@ nav {
         z-index: 0;
         width: 50%;
 
+        p {
+            :last-child {
+                display: none;
+            }
+        }
+
         h1 {
             font-size: 3rem;
             line-height: 1;
             font-weight: bolder;
             margin-top: 1rem;
         }
+
+
     }
 }
 
@@ -322,7 +333,6 @@ nav {
             padding-top: 5rem;
         }
     }
-
 
     .footer-bottom {
 
@@ -402,6 +412,22 @@ nav {
                 overflow: none;
                 padding-left: 0rem;
                 padding-right: 10rem;
+            }
+
+            .text {
+                width: 41%;
+
+                p {
+                    :first-child {
+                        display: none
+                    }
+
+                    :last-child {
+                        display: inline;
+                    }
+                }
+
+
             }
         }
 
